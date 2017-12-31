@@ -1,7 +1,6 @@
 from distutils.core import setup
 from Cython.Build import cythonize
 from distutils.core import Extension
-import numpy as np
 
 libs = ["openal", "xmp"]
 args = ["-w"]
