@@ -6,5 +6,5 @@ import numpy as np
 libs = ["openal", "xmp"]
 args = ["-w"]
 
-extensions = [Extension("xmparser", sources=["xmparser.pyx"], libraries=libs, extra_compile_args=args)]
+extensions = [Extension("xmpylayer", sources=["xmpylayer.pyx"], libraries=libs, extra_compile_args=args)]
 setup(ext_modules = cythonize(extensions))

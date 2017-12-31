@@ -3,8 +3,8 @@ from cpython.exc cimport PyErr_CheckSignals
 from cpython cimport bool
 from libc.stdint cimport uint16_t
 from libc.stdlib cimport malloc, free
-from xmp cimport *
-from al cimport *
+from libs.xmp cimport *
+from libs.al cimport *
 
 cdef ALCdevice * al_dev
 cdef ALCcontext * al_ctx

@@ -11,12 +11,12 @@
             "openal",
             "xmp"
         ],
-        "name": "xmparser",
+        "name": "xmpylayer",
         "sources": [
-            "xmparser.pyx"
+            "xmpylayer.pyx"
         ]
     },
-    "module_name": "xmparser"
+    "module_name": "xmpylayer"
 }
 END: Cython Metadata */
 
@@ -538,8 +538,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__xmparser
-#define __PYX_HAVE_API__xmparser
+#define __PYX_HAVE__xmpylayer
+#define __PYX_HAVE_API__xmpylayer
 #include <string.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -751,7 +751,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "xmparser.pyx",
+  "xmpylayer.pyx",
   "type.pxd",
   "bool.pxd",
   "complex.pxd",
@@ -1040,30 +1040,30 @@ static PyTypeObject *__pyx_ptype_7cpython_7complex_complex = 0;
 
 /* Module declarations from 'libc.stdlib' */
 
-/* Module declarations from 'xmp' */
+/* Module declarations from 'libs.xmp' */
 
-/* Module declarations from 'al' */
+/* Module declarations from 'libs.al' */
 
-/* Module declarations from 'xmparser' */
-static ALCdevice *__pyx_v_8xmparser_al_dev;
-static ALCcontext *__pyx_v_8xmparser_al_ctx;
-static int __pyx_v_8xmparser_NUM_BUFFERS;
-static int __pyx_v_8xmparser_BUFFER_SIZE;
-static ALuint __pyx_v_8xmparser_source;
-static ALuint *__pyx_v_8xmparser_buffers;
-static xmp_context __pyx_v_8xmparser_ctx;
-static struct xmp_frame_info __pyx_v_8xmparser_fi;
-static int __pyx_v_8xmparser_i;
-static char *__pyx_v_8xmparser_b;
-static ALuint __pyx_v_8xmparser_fmt;
-static ALuint __pyx_v_8xmparser_freq;
-static ALuint __pyx_v_8xmparser_buffer;
-static ALint __pyx_v_8xmparser_val;
-#define __Pyx_MODULE_NAME "xmparser"
-extern int __pyx_module_is_main_xmparser;
-int __pyx_module_is_main_xmparser = 0;
+/* Module declarations from 'xmpylayer' */
+static ALCdevice *__pyx_v_9xmpylayer_al_dev;
+static ALCcontext *__pyx_v_9xmpylayer_al_ctx;
+static int __pyx_v_9xmpylayer_NUM_BUFFERS;
+static int __pyx_v_9xmpylayer_BUFFER_SIZE;
+static ALuint __pyx_v_9xmpylayer_source;
+static ALuint *__pyx_v_9xmpylayer_buffers;
+static xmp_context __pyx_v_9xmpylayer_ctx;
+static struct xmp_frame_info __pyx_v_9xmpylayer_fi;
+static int __pyx_v_9xmpylayer_i;
+static char *__pyx_v_9xmpylayer_b;
+static ALuint __pyx_v_9xmpylayer_fmt;
+static ALuint __pyx_v_9xmpylayer_freq;
+static ALuint __pyx_v_9xmpylayer_buffer;
+static ALint __pyx_v_9xmpylayer_val;
+#define __Pyx_MODULE_NAME "xmpylayer"
+extern int __pyx_module_is_main_xmpylayer;
+int __pyx_module_is_main_xmpylayer = 0;
 
-/* Implementation of 'xmparser' */
+/* Implementation of 'xmpylayer' */
 static PyObject *__pyx_builtin_range;
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_test[] = "__test__";
@@ -1087,17 +1087,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_xmparser(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_xmpylayer(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_xmparser},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_xmpylayer},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "xmparser",
+    "xmpylayer",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1148,11 +1148,11 @@ static int __Pyx_InitGlobals(void) {
 }
 
 #if PY_MAJOR_VERSION < 3
-PyMODINIT_FUNC initxmparser(void); /*proto*/
-PyMODINIT_FUNC initxmparser(void)
+PyMODINIT_FUNC initxmpylayer(void); /*proto*/
+PyMODINIT_FUNC initxmpylayer(void)
 #else
-PyMODINIT_FUNC PyInit_xmparser(void); /*proto*/
-PyMODINIT_FUNC PyInit_xmparser(void)
+PyMODINIT_FUNC PyInit_xmpylayer(void); /*proto*/
+PyMODINIT_FUNC PyInit_xmpylayer(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1192,7 +1192,7 @@ bad:
 }
 
 
-static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
+static int __pyx_pymod_exec_xmpylayer(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1213,7 +1213,7 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
           Py_FatalError("failed to import 'refnanny' module");
   }
   #endif
-  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_xmparser(void)", 0);
+  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_xmpylayer(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -1249,7 +1249,7 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("xmparser", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("xmpylayer", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1268,14 +1268,14 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_xmparser) {
+  if (__pyx_module_is_main_xmpylayer) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "xmparser")) {
-      if (unlikely(PyDict_SetItemString(modules, "xmparser", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "xmpylayer")) {
+      if (unlikely(PyDict_SetItemString(modules, "xmpylayer", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1304,7 +1304,7 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "xmparser.pyx":1
+  /* "xmpylayer.pyx":1
  * import threading, time             # <<<<<<<<<<<<<<
  * from cpython.exc cimport PyErr_CheckSignals
  * from cpython cimport bool
@@ -1318,181 +1318,181 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "xmparser.pyx":11
+  /* "xmpylayer.pyx":11
  * cdef ALCdevice * al_dev
  * cdef ALCcontext * al_ctx
  * cdef int NUM_BUFFERS = 6             # <<<<<<<<<<<<<<
  * cdef int BUFFER_SIZE = 4096
  * cdef ALuint source
  */
-  __pyx_v_8xmparser_NUM_BUFFERS = 6;
+  __pyx_v_9xmpylayer_NUM_BUFFERS = 6;
 
-  /* "xmparser.pyx":12
+  /* "xmpylayer.pyx":12
  * cdef ALCcontext * al_ctx
  * cdef int NUM_BUFFERS = 6
  * cdef int BUFFER_SIZE = 4096             # <<<<<<<<<<<<<<
  * cdef ALuint source
  * cdef ALuint * buffers = <ALuint *>malloc(NUM_BUFFERS * sizeof(ALuint))
  */
-  __pyx_v_8xmparser_BUFFER_SIZE = 0x1000;
+  __pyx_v_9xmpylayer_BUFFER_SIZE = 0x1000;
 
-  /* "xmparser.pyx":14
+  /* "xmpylayer.pyx":14
  * cdef int BUFFER_SIZE = 4096
  * cdef ALuint source
  * cdef ALuint * buffers = <ALuint *>malloc(NUM_BUFFERS * sizeof(ALuint))             # <<<<<<<<<<<<<<
  * 
  * al_dev = alcOpenDevice(NULL)
  */
-  __pyx_v_8xmparser_buffers = ((ALuint *)malloc((__pyx_v_8xmparser_NUM_BUFFERS * (sizeof(ALuint)))));
+  __pyx_v_9xmpylayer_buffers = ((ALuint *)malloc((__pyx_v_9xmpylayer_NUM_BUFFERS * (sizeof(ALuint)))));
 
-  /* "xmparser.pyx":16
+  /* "xmpylayer.pyx":16
  * cdef ALuint * buffers = <ALuint *>malloc(NUM_BUFFERS * sizeof(ALuint))
  * 
  * al_dev = alcOpenDevice(NULL)             # <<<<<<<<<<<<<<
  * al_ctx = alcCreateContext(al_dev, NULL)
  * alcMakeContextCurrent(al_ctx)
  */
-  __pyx_v_8xmparser_al_dev = alcOpenDevice(NULL);
+  __pyx_v_9xmpylayer_al_dev = alcOpenDevice(NULL);
 
-  /* "xmparser.pyx":17
+  /* "xmpylayer.pyx":17
  * 
  * al_dev = alcOpenDevice(NULL)
  * al_ctx = alcCreateContext(al_dev, NULL)             # <<<<<<<<<<<<<<
  * alcMakeContextCurrent(al_ctx)
  * alGenBuffers(NUM_BUFFERS, buffers)
  */
-  __pyx_v_8xmparser_al_ctx = alcCreateContext(__pyx_v_8xmparser_al_dev, NULL);
+  __pyx_v_9xmpylayer_al_ctx = alcCreateContext(__pyx_v_9xmpylayer_al_dev, NULL);
 
-  /* "xmparser.pyx":18
+  /* "xmpylayer.pyx":18
  * al_dev = alcOpenDevice(NULL)
  * al_ctx = alcCreateContext(al_dev, NULL)
  * alcMakeContextCurrent(al_ctx)             # <<<<<<<<<<<<<<
  * alGenBuffers(NUM_BUFFERS, buffers)
  * alGenSources(1, &source)
  */
-  alcMakeContextCurrent(__pyx_v_8xmparser_al_ctx);
+  alcMakeContextCurrent(__pyx_v_9xmpylayer_al_ctx);
 
-  /* "xmparser.pyx":19
+  /* "xmpylayer.pyx":19
  * al_ctx = alcCreateContext(al_dev, NULL)
  * alcMakeContextCurrent(al_ctx)
  * alGenBuffers(NUM_BUFFERS, buffers)             # <<<<<<<<<<<<<<
  * alGenSources(1, &source)
  * 
  */
-  alGenBuffers(__pyx_v_8xmparser_NUM_BUFFERS, __pyx_v_8xmparser_buffers);
+  alGenBuffers(__pyx_v_9xmpylayer_NUM_BUFFERS, __pyx_v_9xmpylayer_buffers);
 
-  /* "xmparser.pyx":20
+  /* "xmpylayer.pyx":20
  * alcMakeContextCurrent(al_ctx)
  * alGenBuffers(NUM_BUFFERS, buffers)
  * alGenSources(1, &source)             # <<<<<<<<<<<<<<
  * 
  * cdef xmp_context ctx
  */
-  alGenSources(1, (&__pyx_v_8xmparser_source));
+  alGenSources(1, (&__pyx_v_9xmpylayer_source));
 
-  /* "xmparser.pyx":27
+  /* "xmpylayer.pyx":27
  * cdef char * b
  * 
  * b = <char *>malloc(BUFFER_SIZE)             # <<<<<<<<<<<<<<
  * ctx = xmp_create_context()
  * xmp_load_module(ctx, "zeta_force_level_2.xm")
  */
-  __pyx_v_8xmparser_b = ((char *)malloc(__pyx_v_8xmparser_BUFFER_SIZE));
+  __pyx_v_9xmpylayer_b = ((char *)malloc(__pyx_v_9xmpylayer_BUFFER_SIZE));
 
-  /* "xmparser.pyx":28
+  /* "xmpylayer.pyx":28
  * 
  * b = <char *>malloc(BUFFER_SIZE)
  * ctx = xmp_create_context()             # <<<<<<<<<<<<<<
  * xmp_load_module(ctx, "zeta_force_level_2.xm")
  * xmp_start_player(ctx, 44100, 0)
  */
-  __pyx_v_8xmparser_ctx = xmp_create_context();
+  __pyx_v_9xmpylayer_ctx = xmp_create_context();
 
-  /* "xmparser.pyx":29
+  /* "xmpylayer.pyx":29
  * b = <char *>malloc(BUFFER_SIZE)
  * ctx = xmp_create_context()
  * xmp_load_module(ctx, "zeta_force_level_2.xm")             # <<<<<<<<<<<<<<
  * xmp_start_player(ctx, 44100, 0)
  * 
  */
-  xmp_load_module(__pyx_v_8xmparser_ctx, ((char *)"zeta_force_level_2.xm"));
+  xmp_load_module(__pyx_v_9xmpylayer_ctx, ((char *)"zeta_force_level_2.xm"));
 
-  /* "xmparser.pyx":30
+  /* "xmpylayer.pyx":30
  * ctx = xmp_create_context()
  * xmp_load_module(ctx, "zeta_force_level_2.xm")
  * xmp_start_player(ctx, 44100, 0)             # <<<<<<<<<<<<<<
  * 
  * cdef ALuint fmt = AL_FORMAT_STEREO16
  */
-  xmp_start_player(__pyx_v_8xmparser_ctx, 0xAC44, 0);
+  xmp_start_player(__pyx_v_9xmpylayer_ctx, 0xAC44, 0);
 
-  /* "xmparser.pyx":32
+  /* "xmpylayer.pyx":32
  * xmp_start_player(ctx, 44100, 0)
  * 
  * cdef ALuint fmt = AL_FORMAT_STEREO16             # <<<<<<<<<<<<<<
  * cdef ALuint freq = 44100
  * for i in range(NUM_BUFFERS):
  */
-  __pyx_v_8xmparser_fmt = AL_FORMAT_STEREO16;
+  __pyx_v_9xmpylayer_fmt = AL_FORMAT_STEREO16;
 
-  /* "xmparser.pyx":33
+  /* "xmpylayer.pyx":33
  * 
  * cdef ALuint fmt = AL_FORMAT_STEREO16
  * cdef ALuint freq = 44100             # <<<<<<<<<<<<<<
  * for i in range(NUM_BUFFERS):
  *     xmp_play_buffer(ctx, b, BUFFER_SIZE, 0)
  */
-  __pyx_v_8xmparser_freq = 0xAC44;
+  __pyx_v_9xmpylayer_freq = 0xAC44;
 
-  /* "xmparser.pyx":34
+  /* "xmpylayer.pyx":34
  * cdef ALuint fmt = AL_FORMAT_STEREO16
  * cdef ALuint freq = 44100
  * for i in range(NUM_BUFFERS):             # <<<<<<<<<<<<<<
  *     xmp_play_buffer(ctx, b, BUFFER_SIZE, 0)
  *     alBufferData(buffers[i], fmt, b, BUFFER_SIZE, freq)
  */
-  __pyx_t_2 = __pyx_v_8xmparser_NUM_BUFFERS;
+  __pyx_t_2 = __pyx_v_9xmpylayer_NUM_BUFFERS;
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
-    __pyx_v_8xmparser_i = __pyx_t_3;
+    __pyx_v_9xmpylayer_i = __pyx_t_3;
 
-    /* "xmparser.pyx":35
+    /* "xmpylayer.pyx":35
  * cdef ALuint freq = 44100
  * for i in range(NUM_BUFFERS):
  *     xmp_play_buffer(ctx, b, BUFFER_SIZE, 0)             # <<<<<<<<<<<<<<
  *     alBufferData(buffers[i], fmt, b, BUFFER_SIZE, freq)
  * alSourceQueueBuffers(source, NUM_BUFFERS, buffers)
  */
-    xmp_play_buffer(__pyx_v_8xmparser_ctx, __pyx_v_8xmparser_b, __pyx_v_8xmparser_BUFFER_SIZE, 0);
+    xmp_play_buffer(__pyx_v_9xmpylayer_ctx, __pyx_v_9xmpylayer_b, __pyx_v_9xmpylayer_BUFFER_SIZE, 0);
 
-    /* "xmparser.pyx":36
+    /* "xmpylayer.pyx":36
  * for i in range(NUM_BUFFERS):
  *     xmp_play_buffer(ctx, b, BUFFER_SIZE, 0)
  *     alBufferData(buffers[i], fmt, b, BUFFER_SIZE, freq)             # <<<<<<<<<<<<<<
  * alSourceQueueBuffers(source, NUM_BUFFERS, buffers)
  * alSourcePlay(source)
  */
-    alBufferData((__pyx_v_8xmparser_buffers[__pyx_v_8xmparser_i]), __pyx_v_8xmparser_fmt, __pyx_v_8xmparser_b, __pyx_v_8xmparser_BUFFER_SIZE, __pyx_v_8xmparser_freq);
+    alBufferData((__pyx_v_9xmpylayer_buffers[__pyx_v_9xmpylayer_i]), __pyx_v_9xmpylayer_fmt, __pyx_v_9xmpylayer_b, __pyx_v_9xmpylayer_BUFFER_SIZE, __pyx_v_9xmpylayer_freq);
   }
 
-  /* "xmparser.pyx":37
+  /* "xmpylayer.pyx":37
  *     xmp_play_buffer(ctx, b, BUFFER_SIZE, 0)
  *     alBufferData(buffers[i], fmt, b, BUFFER_SIZE, freq)
  * alSourceQueueBuffers(source, NUM_BUFFERS, buffers)             # <<<<<<<<<<<<<<
  * alSourcePlay(source)
  * 
  */
-  alSourceQueueBuffers(__pyx_v_8xmparser_source, __pyx_v_8xmparser_NUM_BUFFERS, __pyx_v_8xmparser_buffers);
+  alSourceQueueBuffers(__pyx_v_9xmpylayer_source, __pyx_v_9xmpylayer_NUM_BUFFERS, __pyx_v_9xmpylayer_buffers);
 
-  /* "xmparser.pyx":38
+  /* "xmpylayer.pyx":38
  *     alBufferData(buffers[i], fmt, b, BUFFER_SIZE, freq)
  * alSourceQueueBuffers(source, NUM_BUFFERS, buffers)
  * alSourcePlay(source)             # <<<<<<<<<<<<<<
  * 
  * cdef ALuint buffer
  */
-  alSourcePlay(__pyx_v_8xmparser_source);
+  alSourcePlay(__pyx_v_9xmpylayer_source);
 
-  /* "xmparser.pyx":42
+  /* "xmpylayer.pyx":42
  * cdef ALuint buffer
  * cdef ALint val
  * while xmp_play_buffer(ctx, b, BUFFER_SIZE, 0) == 0:             # <<<<<<<<<<<<<<
@@ -1500,19 +1500,19 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
  *     while val <= 0:
  */
   while (1) {
-    __pyx_t_4 = ((xmp_play_buffer(__pyx_v_8xmparser_ctx, __pyx_v_8xmparser_b, __pyx_v_8xmparser_BUFFER_SIZE, 0) == 0) != 0);
+    __pyx_t_4 = ((xmp_play_buffer(__pyx_v_9xmpylayer_ctx, __pyx_v_9xmpylayer_b, __pyx_v_9xmpylayer_BUFFER_SIZE, 0) == 0) != 0);
     if (!__pyx_t_4) break;
 
-    /* "xmparser.pyx":43
+    /* "xmpylayer.pyx":43
  * cdef ALint val
  * while xmp_play_buffer(ctx, b, BUFFER_SIZE, 0) == 0:
  *     alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)             # <<<<<<<<<<<<<<
  *     while val <= 0:
  *         PyErr_CheckSignals()#to allow quitting
  */
-    alGetSourcei(__pyx_v_8xmparser_source, AL_BUFFERS_PROCESSED, (&__pyx_v_8xmparser_val));
+    alGetSourcei(__pyx_v_9xmpylayer_source, AL_BUFFERS_PROCESSED, (&__pyx_v_9xmpylayer_val));
 
-    /* "xmparser.pyx":44
+    /* "xmpylayer.pyx":44
  * while xmp_play_buffer(ctx, b, BUFFER_SIZE, 0) == 0:
  *     alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)
  *     while val <= 0:             # <<<<<<<<<<<<<<
@@ -1520,10 +1520,10 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
  *         alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)
  */
     while (1) {
-      __pyx_t_4 = ((__pyx_v_8xmparser_val <= 0) != 0);
+      __pyx_t_4 = ((__pyx_v_9xmpylayer_val <= 0) != 0);
       if (!__pyx_t_4) break;
 
-      /* "xmparser.pyx":45
+      /* "xmpylayer.pyx":45
  *     alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)
  *     while val <= 0:
  *         PyErr_CheckSignals()#to allow quitting             # <<<<<<<<<<<<<<
@@ -1532,81 +1532,81 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
  */
       __pyx_t_2 = PyErr_CheckSignals(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 45, __pyx_L1_error)
 
-      /* "xmparser.pyx":46
+      /* "xmpylayer.pyx":46
  *     while val <= 0:
  *         PyErr_CheckSignals()#to allow quitting
  *         alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)             # <<<<<<<<<<<<<<
  *     xmp_get_frame_info(ctx, &fi)
  *     alSourceUnqueueBuffers(source, 1, &buffer)
  */
-      alGetSourcei(__pyx_v_8xmparser_source, AL_BUFFERS_PROCESSED, (&__pyx_v_8xmparser_val));
+      alGetSourcei(__pyx_v_9xmpylayer_source, AL_BUFFERS_PROCESSED, (&__pyx_v_9xmpylayer_val));
     }
 
-    /* "xmparser.pyx":47
+    /* "xmpylayer.pyx":47
  *         PyErr_CheckSignals()#to allow quitting
  *         alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)
  *     xmp_get_frame_info(ctx, &fi)             # <<<<<<<<<<<<<<
  *     alSourceUnqueueBuffers(source, 1, &buffer)
  *     alBufferData(buffer, fmt, b, BUFFER_SIZE, freq)
  */
-    xmp_get_frame_info(__pyx_v_8xmparser_ctx, (&__pyx_v_8xmparser_fi));
+    xmp_get_frame_info(__pyx_v_9xmpylayer_ctx, (&__pyx_v_9xmpylayer_fi));
 
-    /* "xmparser.pyx":48
+    /* "xmpylayer.pyx":48
  *         alGetSourcei(source, AL_BUFFERS_PROCESSED, &val)
  *     xmp_get_frame_info(ctx, &fi)
  *     alSourceUnqueueBuffers(source, 1, &buffer)             # <<<<<<<<<<<<<<
  *     alBufferData(buffer, fmt, b, BUFFER_SIZE, freq)
  *     alSourceQueueBuffers(source, 1, &buffer)
  */
-    alSourceUnqueueBuffers(__pyx_v_8xmparser_source, 1, (&__pyx_v_8xmparser_buffer));
+    alSourceUnqueueBuffers(__pyx_v_9xmpylayer_source, 1, (&__pyx_v_9xmpylayer_buffer));
 
-    /* "xmparser.pyx":49
+    /* "xmpylayer.pyx":49
  *     xmp_get_frame_info(ctx, &fi)
  *     alSourceUnqueueBuffers(source, 1, &buffer)
  *     alBufferData(buffer, fmt, b, BUFFER_SIZE, freq)             # <<<<<<<<<<<<<<
  *     alSourceQueueBuffers(source, 1, &buffer)
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)
  */
-    alBufferData(__pyx_v_8xmparser_buffer, __pyx_v_8xmparser_fmt, __pyx_v_8xmparser_b, __pyx_v_8xmparser_BUFFER_SIZE, __pyx_v_8xmparser_freq);
+    alBufferData(__pyx_v_9xmpylayer_buffer, __pyx_v_9xmpylayer_fmt, __pyx_v_9xmpylayer_b, __pyx_v_9xmpylayer_BUFFER_SIZE, __pyx_v_9xmpylayer_freq);
 
-    /* "xmparser.pyx":50
+    /* "xmpylayer.pyx":50
  *     alSourceUnqueueBuffers(source, 1, &buffer)
  *     alBufferData(buffer, fmt, b, BUFFER_SIZE, freq)
  *     alSourceQueueBuffers(source, 1, &buffer)             # <<<<<<<<<<<<<<
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)
  *     if val != AL_PLAYING:
  */
-    alSourceQueueBuffers(__pyx_v_8xmparser_source, 1, (&__pyx_v_8xmparser_buffer));
+    alSourceQueueBuffers(__pyx_v_9xmpylayer_source, 1, (&__pyx_v_9xmpylayer_buffer));
 
-    /* "xmparser.pyx":51
+    /* "xmpylayer.pyx":51
  *     alBufferData(buffer, fmt, b, BUFFER_SIZE, freq)
  *     alSourceQueueBuffers(source, 1, &buffer)
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)             # <<<<<<<<<<<<<<
  *     if val != AL_PLAYING:
  *         alSourcePlay(source)
  */
-    alGetSourcei(__pyx_v_8xmparser_source, AL_SOURCE_STATE, (&__pyx_v_8xmparser_val));
+    alGetSourcei(__pyx_v_9xmpylayer_source, AL_SOURCE_STATE, (&__pyx_v_9xmpylayer_val));
 
-    /* "xmparser.pyx":52
+    /* "xmpylayer.pyx":52
  *     alSourceQueueBuffers(source, 1, &buffer)
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)
  *     if val != AL_PLAYING:             # <<<<<<<<<<<<<<
  *         alSourcePlay(source)
  * 
  */
-    __pyx_t_4 = ((__pyx_v_8xmparser_val != AL_PLAYING) != 0);
+    __pyx_t_4 = ((__pyx_v_9xmpylayer_val != AL_PLAYING) != 0);
     if (__pyx_t_4) {
 
-      /* "xmparser.pyx":53
+      /* "xmpylayer.pyx":53
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)
  *     if val != AL_PLAYING:
  *         alSourcePlay(source)             # <<<<<<<<<<<<<<
  * 
  * xmp_end_player(ctx)
  */
-      alSourcePlay(__pyx_v_8xmparser_source);
+      alSourcePlay(__pyx_v_9xmpylayer_source);
 
-      /* "xmparser.pyx":52
+      /* "xmpylayer.pyx":52
  *     alSourceQueueBuffers(source, 1, &buffer)
  *     alGetSourcei(source, AL_SOURCE_STATE, &val)
  *     if val != AL_PLAYING:             # <<<<<<<<<<<<<<
@@ -1616,52 +1616,52 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
     }
   }
 
-  /* "xmparser.pyx":55
+  /* "xmpylayer.pyx":55
  *         alSourcePlay(source)
  * 
  * xmp_end_player(ctx)             # <<<<<<<<<<<<<<
  * xmp_release_module(ctx)
  * xmp_free_context(ctx)
  */
-  xmp_end_player(__pyx_v_8xmparser_ctx);
+  xmp_end_player(__pyx_v_9xmpylayer_ctx);
 
-  /* "xmparser.pyx":56
+  /* "xmpylayer.pyx":56
  * 
  * xmp_end_player(ctx)
  * xmp_release_module(ctx)             # <<<<<<<<<<<<<<
  * xmp_free_context(ctx)
  * 
  */
-  xmp_release_module(__pyx_v_8xmparser_ctx);
+  xmp_release_module(__pyx_v_9xmpylayer_ctx);
 
-  /* "xmparser.pyx":57
+  /* "xmpylayer.pyx":57
  * xmp_end_player(ctx)
  * xmp_release_module(ctx)
  * xmp_free_context(ctx)             # <<<<<<<<<<<<<<
  * 
  * alDeleteSources(1, &source)
  */
-  xmp_free_context(__pyx_v_8xmparser_ctx);
+  xmp_free_context(__pyx_v_9xmpylayer_ctx);
 
-  /* "xmparser.pyx":59
+  /* "xmpylayer.pyx":59
  * xmp_free_context(ctx)
  * 
  * alDeleteSources(1, &source)             # <<<<<<<<<<<<<<
  * alDeleteBuffers(NUM_BUFFERS, buffers)
  * alcMakeContextCurrent(NULL)
  */
-  alDeleteSources(1, (&__pyx_v_8xmparser_source));
+  alDeleteSources(1, (&__pyx_v_9xmpylayer_source));
 
-  /* "xmparser.pyx":60
+  /* "xmpylayer.pyx":60
  * 
  * alDeleteSources(1, &source)
  * alDeleteBuffers(NUM_BUFFERS, buffers)             # <<<<<<<<<<<<<<
  * alcMakeContextCurrent(NULL)
  * alcDestroyContext(al_ctx)
  */
-  alDeleteBuffers(__pyx_v_8xmparser_NUM_BUFFERS, __pyx_v_8xmparser_buffers);
+  alDeleteBuffers(__pyx_v_9xmpylayer_NUM_BUFFERS, __pyx_v_9xmpylayer_buffers);
 
-  /* "xmparser.pyx":61
+  /* "xmpylayer.pyx":61
  * alDeleteSources(1, &source)
  * alDeleteBuffers(NUM_BUFFERS, buffers)
  * alcMakeContextCurrent(NULL)             # <<<<<<<<<<<<<<
@@ -1670,22 +1670,22 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
  */
   alcMakeContextCurrent(NULL);
 
-  /* "xmparser.pyx":62
+  /* "xmpylayer.pyx":62
  * alDeleteBuffers(NUM_BUFFERS, buffers)
  * alcMakeContextCurrent(NULL)
  * alcDestroyContext(al_ctx)             # <<<<<<<<<<<<<<
  * alcCloseDevice(al_dev)
  */
-  alcDestroyContext(__pyx_v_8xmparser_al_ctx);
+  alcDestroyContext(__pyx_v_9xmpylayer_al_ctx);
 
-  /* "xmparser.pyx":63
+  /* "xmpylayer.pyx":63
  * alcMakeContextCurrent(NULL)
  * alcDestroyContext(al_ctx)
  * alcCloseDevice(al_dev)             # <<<<<<<<<<<<<<
  */
-  alcCloseDevice(__pyx_v_8xmparser_al_dev);
+  alcCloseDevice(__pyx_v_9xmpylayer_al_dev);
 
-  /* "xmparser.pyx":1
+  /* "xmpylayer.pyx":1
  * import threading, time             # <<<<<<<<<<<<<<
  * from cpython.exc cimport PyErr_CheckSignals
  * from cpython cimport bool
@@ -1702,11 +1702,11 @@ static int __pyx_pymod_exec_xmparser(PyObject *__pyx_pyinit_module)
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init xmparser", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init xmpylayer", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init xmparser");
+    PyErr_SetString(PyExc_ImportError, "init xmpylayer");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
